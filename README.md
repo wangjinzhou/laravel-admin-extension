@@ -1,2 +1,2 @@
-# laravel-admin-web-config
-laravel-admin 自定义扩展配置
+# laravel-admin-extension
+laravel-admin 自定义扩展
