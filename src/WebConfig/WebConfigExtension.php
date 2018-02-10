@@ -1,5 +1,6 @@
 <?php
 namespace Howous\WebConfig;
+use Encore\Admin\Admin;
 use Encore\Admin\Extension;
 
 /**
@@ -20,14 +21,23 @@ class WebConfigExtension extends Extension
     public static function boot()
     {
         static::registerRoutes();
+
+        Admin::extend('web_config', __CLASS__);
     }
 
     protected static function registerRoutes()
     {
-        parent::routes(function($route){
+        parent::routes(function($router){
             /* @var \Illuminate\Routing\Router $router */
             $router->get('/web-config/all', 'WebConfigController@edit');    //配置编辑展示
             $router->put('/web-config/all', 'WebConfigController@update');
         });
+    }
+
+    public static function import()
+    {
+        parent::createMenu('配置', '/web-config/all', 'fa-gear');
+
+        parent::createPermission('Admin Config', 'ext.web-config', 'web-config/*');
     }
 }

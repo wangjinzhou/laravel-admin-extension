@@ -27,7 +27,7 @@ class ExtensionServiceProvider extends ServiceProvider
             $this->publishes([__DIR__ . '/../resources/assets' => public_path('vendor/howous-admin-extension')], 'laravel-admin-extension-assets');
         }
 
-        WebConfigExtension::load();
+
         WebConfigExtension::boot();
 
         $this->registerFields();
