@@ -32,8 +32,7 @@ class ExtensionServiceProvider extends ServiceProvider
 
         $this->registerFields();
     }
-    
-    
+
     
     protected function registerFields()
     {
