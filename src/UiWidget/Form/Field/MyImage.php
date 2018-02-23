@@ -6,7 +6,7 @@
  * Time: 11:10
  */
 
-namespace App\Admin\Extensions\Form\Field;
+namespace Howous\UiWidget\Form\Field;
 
 
 use Encore\Admin\Form\Field\Image;
@@ -22,7 +22,6 @@ class MyImage  extends Image
         $ext = $image->getClientOriginalExtension();
 
         $this->name= md5(uniqid('',true)) .'.'.$ext;
-
         $this->callInterventionMethods($image->getRealPath());
 
         return $this->uploadAndDeleteOriginal($image);

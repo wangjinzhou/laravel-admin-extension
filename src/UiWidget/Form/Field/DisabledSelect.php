@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Admin\Extensions\Form\Field;
+namespace Howous\UiWidget\Form\Field;
 
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form\Field\Select;
