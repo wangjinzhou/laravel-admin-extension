@@ -2,9 +2,13 @@
 
 namespace Howous;
 
+use App\Admin\Extensions\Form\Field\DisabledMultipleSelect;
+use App\Admin\Extensions\Form\Field\DisabledSelect;
+use App\Admin\Extensions\Form\Field\MyImage;
 use Encore\Admin\Form;
 use Howous\UiWidget\Form\Field\CnyCurrency;
 use Howous\UiWidget\Form\Field\PretreatCurrency;
+use Howous\UiWidget\Form\Field\TinyMCE;
 use Howous\UiWidget\Form\PlainForm;
 use Howous\WebConfig\WebConfigExtension;
 use Illuminate\Support\ServiceProvider;
@@ -37,8 +41,12 @@ class ExtensionServiceProvider extends ServiceProvider
     protected function registerFields()
     {
         Form::extend('pretreatCurrency', PretreatCurrency::class);
+        Form::extend('disabledSelect',DisabledSelect::class);
+        Form::extend('disabledMultipleSelect',DisabledMultipleSelect::class);
+        Form::extend('image',MyImage::class);
         PlainForm::setBuiltinFields();
         PlainForm::extend('cnyCurrency', CnyCurrency::class);
         PlainForm::extend('pretreatCurrency', PretreatCurrency::class);
+        PlainForm::extend('editor',TinyMCE::class);
     }
 }

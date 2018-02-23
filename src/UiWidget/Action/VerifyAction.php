@@ -1,6 +1,6 @@
 <?php
 /**
- * 单个状态更新操作 
+ * 单个状态更新操作
  *  $grid->actions(function ($actions) {
         $actions->disableEdit();
         $is_read = $actions->row->is_read;
