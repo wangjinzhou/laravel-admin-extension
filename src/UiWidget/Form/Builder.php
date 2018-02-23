@@ -13,7 +13,7 @@ use Illuminate\Support\Collection;
 
 class Builder
 {
-    protected $view = 'admin_ext::form.field.plain-form';
+    protected $view = 'admin_ext::form.plain-form';
 
     protected $form = null;
 

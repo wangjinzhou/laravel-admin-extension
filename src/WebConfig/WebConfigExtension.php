@@ -29,9 +29,11 @@ class WebConfigExtension extends Extension
     {
         parent::routes(function($router){
             /* @var \Illuminate\Routing\Router $router */
-            $router->group(['']);
-            $router->get('/web-config/all', 'WebConfigController@edit');    //配置编辑展示
-            $router->put('/web-config/all', 'WebConfigController@update');
+            $router->group(['namespace'=>'Howous\WebConfig'],function($router){
+                /* @var \Illuminate\Routing\Router $router */
+                $router->get('/web-config/all', 'WebConfigController@edit');    //配置编辑展示
+                $router->put('/web-config/all', 'WebConfigController@update');
+            });
         });
     }
 

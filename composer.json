@@ -1,11 +1,11 @@
 {
     "name": "howous/laravel-admin-extension",
-    "description": "laravel admin后台配置文件",
+    "description": "laravel admin后台扩展",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "M&I",
+            "name": "howous",
             "email": "3217117225@qq.com"
         }
     ],
