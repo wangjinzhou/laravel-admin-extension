@@ -7,7 +7,7 @@ laravel-admin 自定义扩展
 ```
 $ composer require howous/laravel-admin-extension
 
-$ php artisan migrate
+$ php artisan vendor:publish --tag=howous-laravel-admin-extension
 ```
 
 Open `app/Providers/AppServiceProvider.php`, and call the `Config::load()` method within the `boot` method:

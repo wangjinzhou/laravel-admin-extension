@@ -23,8 +23,8 @@ class ExtensionServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             //            $this->loadMigrationsFrom(__DIR__ . '../database/migirations');
-            $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'laravel-admin-extension-migrations');
-            $this->publishes([__DIR__ . '/../resources/assets' => public_path('vendor/howous-admin-extension')], 'laravel-admin-extension-assets');
+            $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'howous-laravel-admin-extension');
+            $this->publishes([__DIR__ . '/../resources/assets' => public_path('vendor/howous-admin-extension')], 'howous-laravel-admin-extension');
         }
 
 
