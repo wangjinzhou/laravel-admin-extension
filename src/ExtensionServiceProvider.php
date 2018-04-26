@@ -43,7 +43,7 @@ class ExtensionServiceProvider extends ServiceProvider
         Form::extend('pretreatCurrency', PretreatCurrency::class);
         Form::extend('disabledSelect',DisabledSelect::class);
         Form::extend('disabledMultipleSelect',DisabledMultipleSelect::class);
-        Form::extend('image',MyImage::class);
+        Form::extend('myImage',MyImage::class);
         PlainForm::setBuiltinFields();
         PlainForm::extend('cnyCurrency', CnyCurrency::class);
         PlainForm::extend('pretreatCurrency', PretreatCurrency::class);
