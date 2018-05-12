@@ -33,6 +33,7 @@ class Bootstrap
         Form::extend('disabledSelect',DisabledSelect::class);
         Form::extend('disabledMultipleSelect',DisabledMultipleSelect::class);
         Form::extend('myImage',MyImage::class);
+        Form::extend('myEditor',TinyMCE::class);
         PlainForm::setBuiltinFields();
         PlainForm::extend('cnyCurrency', CnyCurrency::class);
         PlainForm::extend('pretreatCurrency', PretreatCurrency::class);
