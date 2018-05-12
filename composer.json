@@ -1,0 +1,31 @@
+{
+    "name": "howous/laravel-admin-extension",
+    "description": "laravel admin后台扩展",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "howous",
+            "email": "3217117225@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+        "encore/laravel-admin": "1.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Howous\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Howous\\ExtensionServiceProvider"
+            ]
+
+        }
+    }
+}
