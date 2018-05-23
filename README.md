@@ -36,3 +36,5 @@ class AppServiceProvider extends ServiceProvider
 $ php artisan admin:import web_config
 ```
 
+laravel-admin 配置文件admin.php中的路由项 中间件改为 'middleware' => ['web', 'admin','h_admin'],
+
